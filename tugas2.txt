@@ -11,6 +11,7 @@ Jenis-jenis VCS:
 3.VCS terdistribusi (peer-to-peer)
 
 Git-> Ia adalah salah satu VCS terdistribusi yang gratis dan open source.
+perubahan 1
 
 Kegunaan Git
 1.Pelacakan riwayat perubahan
@@ -54,7 +55,9 @@ Melihat riwayat perubahan
 Menampilkan riwayat commit->git log
 Menampilkan riwayat commit yang lebih ringkas->git log --oneline
 Menampilkan riwayat commit dengan branching dan merging->git log --graph
+  menambahkan keguanaan git
 
+  
 Menggunakan remote
 
 Mengkloning repository yang sudah ada
@@ -96,5 +99,3 @@ $ git remote -v origin https://github.com/romi/latihan-1 (fetch)
  Unordered list
  <ul> dan <li> .
 
-
- 
