@@ -3,4 +3,98 @@ Pelacakan -> ialah kita akan mengetahui setiap perubahan yang kita lakukan
 Pengelolaan -> ialah kita akan mengatur atau kita kelola setiap perubahan yang kita lakukan
 
 
-version Control 
+version Control ->Orang biasanya melakukan version control dengan cara menyalin le dengan nomor revisi atau stempel waktu
+
+Jenis-jenis VCS: 
+1.VCS lokal 
+2.VCS terpusat (client–server)
+3.VCS terdistribusi (peer-to-peer)
+
+Git-> Ia adalah salah satu VCS terdistribusi yang gratis dan open source.
+
+Kegunaan Git
+1.Pelacakan riwayat perubahan
+2.Kolaborasi jarak jauh
+3.Branching dan merging
+
+Dasar-dasar Git
+Membuat repository baru
+1.Mengubah folder (yang bukan repository Git) menjadi repository Git.
+2.Mengkloning repository yang sudah ada dari tempat lain (remote).
+
+git init->Mengubah folder saat ini menjadi repository Git
+git clone->Mengkloning repository yang sudah ada dari tempat lain
+
+Membuat commit baru
+Commit adalah snapshot (keadaan yang disimpan) dari repository di titik waktu te entu.
+Dalam Git, setiap le memiliki 4 status:
+1.untracked (tidak dilacak) 
+2.unmodified (tidak diubah) 
+3.modified (diubah) 
+4.staged (ditambahkan ke staging area)
+
+Memeriksa status file ->git status
+Menambahkan le ke staging area->git add <file>
+
+Menyimpan perubahan->git commit -m <pesan>
+Membuat commit baru dari semua perubahan bese a pesannya->git commit -am <pesan>
+
+Membatalkan sesuatu
+
+Membatalkan penambahan ke staging area
+Perintah untuk membatalkan penambahan semua file-> git reset
+
+Perintah untuk membatalkan penambahan file tertentu-> git reset HEAD <nama-file>
+Membatalkan commit terakhir->git reset HEAD~1
+
+Membatalkan commit terakhir se a menghapus perubahan saat ini->git reset --hard HEAD~1
+
+
+Melihat riwayat perubahan
+Menampilkan riwayat commit->git log
+Menampilkan riwayat commit yang lebih ringkas->git log --oneline
+Menampilkan riwayat commit dengan branching dan merging->git log --graph
+
+Menggunakan remote
+
+Mengkloning repository yang sudah ada
+git clone <url>
+
+Menampilkan da ar remote
+Untuk melihat server remote mana yang telah kita kongurasikan, Anda dapat menjalankan perintah git remote .
+
+Jika repository saat ini adalah hasil kloning, maka ia akan memiliki setidaknya satu remote bernama origin , itu adalah nama default yang diberikan Git untuk server tempat kita mengkloning:
+
+$ git clone https://github.com/romi/romigram Cloning into 'romigram'... remote: Reusing existing pack: 1857, done. remote: Total 1857 (delta 0), reused 0 (delta 0) Receiving objects: 100% (1857/1857), 374.35 KiB | 268.00 KiB/s, done. Resolving deltas: 100% (772/772), done. Checking connectivity... done. $ cd romigram $ git remote origin
+
+$ git remote -v origin https://github.com/romi/latihan-1 (fetch)
+ origin https://github.com/romi/latihan-1 (push)
+
+ Menambahkan remote baru->git remote add <nama> <url>
+ Menghapus remote->git remote remove <nama>
+ Mengganti nama remote->git remote rename <namalama> <nama-baru>
+ Mengupload perubahan ke remote->git push <nama-remote> <nama-branch>
+
+ Menulis dokumen Markdown
+ Sintaks dasar
+ Judul 1->#Judul
+ Judul2->##Judul
+ Judul3->###Judul3
+ sampe 6
+
+ Gaya pada teks
+ Tebal->**teks**
+ Miring->*teks*
+ Dicoret->~~teks~~
+
+ List
+
+ Ordered list
+ <ol> dan <li> .
+
+
+ Unordered list
+ <ul> dan <li> .
+
+
+ 
