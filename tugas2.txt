@@ -103,4 +103,9 @@ Saturnus
 Uranus
  Neptunus
 
+ Mengkloning repository yang sudah ada
+
+ Mengcloning artinya menyalin repository yang sudah ada dari tempat lain
+
 dibuat oleh kausar sihombing rangkuman materi git
+
