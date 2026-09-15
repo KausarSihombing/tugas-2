@@ -1,0 +1,6 @@
+version Control ->Praktik Pelacakan dan Pengelolaan data dari waktu ke waktu
+Pelacakan -> ialah kita akan mengetahui setiap perubahan yang kita lakukan
+Pengelolaan -> ialah kita akan mengatur atau kita kelola setiap perubahan yang kita lakukan
+
+
+version Control 
